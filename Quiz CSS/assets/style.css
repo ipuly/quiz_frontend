@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    margin-top: 10px;
+    padding: 1em;
+}
+
+.header,
+.footer {
+    background-color: #f1f1f1;
+}
+
+.body {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.body .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.body .box div {
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+.body .box .box1 {
+    background-color: purple;
+}
+
+.body .box .box2 {
+    background-color: blue;
+}
+
+.body .box .box3 {
+    background-color: red;
+}
+
+.body .box .box4 {
+    background-color: black;
+}
+
+.body .box .box5 {
+    background-color: brown;
+}
+
+.image {
+    border: 1px;
+    border-style: solid;
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+    margin: 20px 10px;
+}
+
+.description {
+    width: 25%;
+    margin-top: 50px;
+}
+
+.description h2 {
+    margin-bottom: 10px;
+}
+
+.description button {
+    cursor: pointer;
+    width: 100%;
+    background-color: pink;
+    margin-bottom: 50px;
+}
+
+.description h4,
+.description p {
+    margin-bottom: 10px;
+}
+
+.title-footer h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.menu-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 100px 0;
+}
+
+.menu-footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.overview {
+    display: flex;
+    flex-direction: column;
+}
+
+.company {
+    display: flex;
+    flex-direction: column;
+}
+
+.explore {
+    display: flex;
+    flex-direction: column;
+}
