@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - Ipuly</title>
+    <!-- Integrasi Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Internal CSS -->
+    <style type="text/css">
+        .border-rounded {
+            border-radius: 20px;
+        }
+
+        .badge-notif {
+            position: relative;
+        }
+
+        .badge-notif[data-badge]:after {
+            content: attr(data-badge);
+            position: absolute;
+            top: 10px;
+            right: 5px;
+            font-size: .7em;
+            background: pink;
+            color: white;
+            width: 10px;
+            height: 10px;
+            text-align: center;
+            line-height: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white px-5 py-3">
+        <img src="assets/img/logo.png" alt="logo">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">Showcase</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">Catalog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">Delivery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">Rewards</a>
+                </li>
+                <li class="nav-item">
+                    <div>
+                        <a href="#" class="nav-link badge-notif" data-badge=><img src="assets/img/cart-icon.svg"
+                                alt="cart"></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End Navbar Section -->
+
+    <!-- Bredcumb Section -->
+    <div class="d-flex px-5 py-4 bg-light">
+        <a href="#" class="text-dark mr-3">Home</a>
+        <span class="text-secondary mr-3">/</span>
+        <a href="#" class="text-dark mr-3">Office Room</a>
+        <span class="text-secondary mr-3">/</span>
+        <a href="#" class="text-dark mr-3"><strong>Details</strong></a>
+    </div>
+    <!-- End Breadcumb Section -->
+
+    <!-- Content Section -->
+    <div class="d-flex justify-content-center p-5">
+        <div class="d-flex flex-column justify-content-between">
+            <div><img src="assets/img/side-1.png" alt="side-1" class="border-rounded"></div>
+            <div><img src="assets/img/side-2.png" alt="side-2" class="border-rounded"></div>
+            <div><img src="assets/img/side-3.png" alt="side-3" class="border-rounded"></div>
+            <div><img src="assets/img/side-1.png" alt="side-4" class="border-rounded"></div>
+            <div><img src="assets/img/side-2.png" alt="side-5" class="border-rounded"></div>
+        </div>
+        <div class="mr-5 ml-3">
+            <div><img src="assets/img/chair.png" alt="chair" class="border-rounded"></div>
+        </div>
+        <div class="mr-5">
+            <h2>Chair Thatty</h2>
+            <p>IDR 12.000.000</p>
+            <button type="button" class="btn border-rounded mb-3 border-0 px-4 py-2 d-flex align-items-center"
+                style="background-color: pink;">
+                <img src="assets/img/cart-icon.svg" alt="button-cart"> Add to
+                Chart</button>
+            <hr>
+            <h6 class="mt-4 mb-2">About the product:</h6>
+            <p>Tailored to a level of perfection synonymous with that
+                of a Savile Row suit and with understated quality in the
+                detail, Jetty has been influenced by timeless 1950s style.</p>
+
+            <p>Providing a subtle nod to the past, Jetty also provides
+                a perfect solution for the way we work today.
+                A comprehensive product family, Jetty features a variety
+                of elegant chairs and sofas.</p>
+            <br>
+        </div>
+    </div>
+
+    <div class="align-items-center mt-5 p-5 bg-light">
+        <div class="my-5 ml-3">
+            <h3>Complete Your Room</h3>
+            <h3>With What We Designed</h3>
+        </div>
+        <div class="d-flex justify-content-around">
+            <div class="card border-rounded border-0" style="width: 18rem;">
+                <img class="card-img-top border-rounded px-3 pt-3" src="assets/img/chair-1.png" alt="chair-1">
+                <div class="card-body">
+                    <h5 class="card-title">Cangkir Mauttie</h5>
+                    <p class="card-text">IDR 89.300.000</p>
+                </div>
+            </div>
+            <div class="card border-rounded border-0" style="width: 18rem;">
+                <img class="card-img-top border-rounded px-3 pt-3" src="assets/img/chair-2.png" alt="chair-2">
+                <div class="card-body">
+                    <h5 class="card-title">Samman kakka</h5>
+                    <p class="card-text">IDR 14.500.000</p>
+                </div>
+            </div>
+            <div class="card border-rounded border-0" style="width: 18rem;">
+                <img class="card-img-top border-rounded px-3 pt-3" src="assets/img/chair-3.png" alt="chair-3">
+                <div class="card-body">
+                    <h5 class="card-title">Lino Dino</h5>
+                    <p class="card-text">IDR 22.000.000</p>
+                </div>
+            </div>
+            <div class="card border-rounded border-0" style="width: 18rem;">
+                <img class="card-img-top border-rounded px-3 pt-3" src="assets/img/chair-4.png" alt="chair-4">
+                <div class="card-body">
+                    <h5 class="card-title">Syail Ammeno</h5>
+                    <p class="card-text">IDR 12.000.000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Content Section -->
+
+    <!-- Footer Section -->
+    <footer class="d-flex flex-column bg-white px-5 pt-5">
+        <div class="d-flex justify-content-center py-5">
+            <img src="assets/img/logo.png" alt="logo">
+        </div>
+
+        <div class="links d-flex flex-row justify-content-around pb-5">
+            <div class="list-1 d-flex flex-column">
+                <a href="#" class="text-dark nav-link"><b>Overview</b></a>
+                <a href="#" class="text-dark nav-link">Shipping</a>
+                <a href="#" class="text-dark nav-link">Refund</a>
+                <a href="#" class="text-dark nav-link">Promotion</a>
+            </div>
+            <div class="list-2 d-flex flex-column">
+                <a href="#" class="text-dark nav-link"><b>Company</b></a>
+                <a href="#" class="text-dark nav-link">About</a>
+                <a href="#" class="text-dark nav-link">Career</a>
+                <a href="#" class="text-dark nav-link">Contact Us</a>
+            </div>
+            <div class="list-3 d-flex flex-column">
+                <a href="#" class="text-dark nav-link"><b>Explore</b></a>
+                <a href="#" class="text-dark nav-link">Terms & Conds</a>
+                <a href="#" class="text-dark nav-link">Privacy Policy</a>
+                <a href="#" class="text-dark nav-link">For Developer</a>
+            </div>
+            <form action="">
+                <p><strong>Special Letter</strong></p>
+                <div class="bg-light" style="border-radius: 10px; overflow: hidden;">
+                    <input class="bg-light px-3 py-10" style="border: none;" type="email" name="email"
+                        placeholder="Your email address">
+                    <button type="submit" class="btn-submit rounded" style="background-color: pink; border: none;"><img
+                            src="assets/img/tele-icon.png" alt="subscribe" class="p-2"></button>
+                </div>
+            </form>
+        </div>
+    </footer>
+    <!-- End Footer Section -->
+
+    <!-- Copyright Section -->
+    <div>
+        <div class="text-center bg-light p-4">
+            © 2022 Copyright -
+            <a class="text-dark" href="#"><strong>Ipuly</strong></a>
+        </div>
+    </div>
+    <!-- End Copyright Section -->
+</body>
+
+</html>
+</body>
+
+</html>
