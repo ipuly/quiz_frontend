@@ -60,3 +60,13 @@ console.log("Nama : " + users[1].name);
 console.log("SMA : " + users[1].education[2].name);
 console.log("Kota : " + users[1].education[2].city);
 console.log("Makanan Favorit : " + users[1].favoriteRestaurant[5]);
+
+let nama_users = document.getElementById('nama');
+let sekolah = document.getElementById('sma');
+let kota = document.getElementById('kota');
+let mknFav = document.getElementById('makanan');
+
+nama_users.innerHTML = users[1].name;
+sekolah.innerHTML = users[1].education[2].name;
+kota.innerHTML = users[1].education[2].city;
+mknFav.innerHTML = users[1].favoriteRestaurant[5];
