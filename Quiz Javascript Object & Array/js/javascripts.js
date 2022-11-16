@@ -1,0 +1,1 @@
+let name = ['Monica', 'Wendy'];
