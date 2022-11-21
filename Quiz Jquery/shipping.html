@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping - LuxSpace</title>
+    <!-- Integrasi Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Integrasi Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white px-5 py-3">
+        <img src="assets/img/logo.png" alt="logo">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">Showcase</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">Catalog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">Delivery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">Rewards</a>
+                </li>
+                <li class="nav-item">
+                    <div>
+                        <a href="#" class="nav-link badge-notif" data-badge=><img src="assets/img/cart-icon.svg"
+                                alt="cart"></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End Navbar Section -->
+
+    <!-- Bredcumb Section -->
+    <div class="d-flex px-5 py-4 bg-light">
+        <a href="#" class="text-dark mr-3">Home</a>
+        <span class="text-secondary mr-3">/</span>
+        <a href="#" class="text-dark mr-3">Office Room</a>
+        <span class="text-secondary mr-3">/</span>
+        <a href="index.html" class="text-dark mr-3">Details</a>
+        <span class="text-secondary mr-3">/</span>
+        <a href="#" class="text-dark mr-3"><strong>Shipping</strong></a>
+    </div>
+    <!-- End Breadcumb Section -->
+
+    <!-- Content Section -->
+    <div class="row justify-content-center my-5">
+        <div class="col-6 border-pink p-5 rounded" id="form-main">
+            <h2 class="text-center mb-4">Shipping Form</h2>
+            <form id="form-shipping">
+                <div class="form-row">
+                    <div class="form-group col-6">
+                        <label for="InputFirstName">First Name</label>
+                        <input type="text" class="form-control" id="InputFirstName" placeholder="Enter your first name"
+                            required />
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="InputPassword">Phone number</label>
+                        <input type="text" class="form-control" id="InputPassword" placeholder="Enter phone number" />
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-6">
+                        <label for="InputLastName">Last name</label>
+                        <input type="text" class="form-control" id="InputLastName" placeholder="Enter your last name"
+                            required />
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="InputCity">City</label>
+                        <input type="text" class="form-control" id="InputCity" placeholder="Enter city" />
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-6">
+                        <label for="InputEmail">Email address</label>
+                        <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp"
+                            placeholder="Enter Email" />
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="InputPostal">Postal Code</label>
+                        <input type="postal" class="form-control" id="InputPostal" placeholder="Enter postal code" />
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-12">
+                        <label for="InputAddress">Address</label>
+                        <textarea type="text" class="form-control" id="InputAddress" aria-describedby="addressHelp"
+                            placeholder="Enter address" required></textarea>
+                    </div>
+
+                    <div class="form-group col-12">
+                        <button type="submit" class="btn rounded" style="background-color: pink;">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="d-none" id="result">
+            <h4></h4>
+            <p></p>
+            <button type="submit" class="btn-submit border-0 py-2 px-3" style="background-color: pink;">Back</button>
+        </div>
+
+    </div>
+    <!-- End Content Section -->
+
+    <!-- Footer Section -->
+    <footer class="d-flex flex-column bg-light px-5 pt-5">
+        <div class="d-flex justify-content-center py-5">
+            <img src="assets/img/logo.png" alt="logo">
+        </div>
+
+        <div class="links d-flex flex-row justify-content-around pb-5">
+            <div class="d-flex flex-column">
+                <a href="#" class="text-dark nav-link"><b>Overview</b></a>
+                <a href="#" class="text-dark nav-link">Shipping</a>
+                <a href="#" class="text-dark nav-link">Refund</a>
+                <a href="#" class="text-dark nav-link">Promotion</a>
+            </div>
+            <div class="d-flex flex-column">
+                <a href="#" class="text-dark nav-link"><b>Company</b></a>
+                <a href="#" class="text-dark nav-link">About</a>
+                <a href="#" class="text-dark nav-link">Career</a>
+                <a href="#" class="text-dark nav-link">Contact Us</a>
+            </div>
+            <div class="d-flex flex-column">
+                <a href="#" class="text-dark nav-link"><b>Explore</b></a>
+                <a href="#" class="text-dark nav-link">Terms & Conds</a>
+                <a href="#" class="text-dark nav-link">Privacy Policy</a>
+                <a href="#" class="text-dark nav-link">For Developer</a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer Section -->
+
+    <!-- Copyright Section -->
+    <div>
+        <div class="text-center bg-white p-4">
+            © 2022 Copyright -
+            <a class="text-dark" href="#"><strong>Ipuly</strong></a>
+        </div>
+    </div>
+    <!-- End Copyright Section -->
+
+    <script src="js/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+</body>
+
+</html>
