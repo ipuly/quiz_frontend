@@ -16,18 +16,20 @@ $(document).ready(function () {
     // Change Image
     $(".card").click(function (e) {
         e.preventDefault();
-        const imgPreview = $("img", this).attr("src");
-        $("#preview").attr("src", imgPreview);
-        $("#preview").attr("height", "500px");
+        const mainImg = $("img", this).attr("src");
+        $("#preview").attr("src", mainImg);
+        $("#preview").attr("height", "560px");
+        $("#preview").attr("height", "609px");
 
         window.scrollTo({ top: 0, behavior: "smooth" });
     })
 
     $(".side").click(function (e) {
         e.preventDefault();
-        const imgPreview = $("img", this).attr("src");
-        $("#preview").attr("src", imgPreview);
-        $("#preview").attr("height", "500px");
+        const mainImg = $("img", this).attr("src");
+        $("#preview").attr("src", mainImg);
+        $("#preview").attr("height", "560px");
+        $("#preview").attr("height", "609px");
     })
 
     $("#form-shipping").submit(function (e) {
@@ -38,7 +40,7 @@ $(document).ready(function () {
         const fullName = firstName + " " + lastName;
         const address = $("#InputAddress", this).val();
 
-        $("#form-main").addClass("d-none");
+        $("#div-shipping").addClass("d-none");
         $("#result").removeClass("d-none");
 
         $("h4", "#result").text("Terimakasih, " + fullName);
